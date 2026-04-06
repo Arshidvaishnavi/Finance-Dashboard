@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="inner-dashboard-div1">
+            <div class="sidebar">
+                <select id="role">
+                    <option value="Viewer">Viewer</option>
+                    <option value="Admin">Admin</option>
+                </select>
+                <div class="sidebar_items">
+                    <a href="#main-area1"><div id="Dashboard">Dashboard</div></a>
+                    <a href="#search"><div id="Transations">Transations</div></a>
+                    <a href="#in-heading"><div id="Insights">Insights</div></a>
+                </div>
+            </div>
+            <div id="main-area1">
+                <h1>Expense Tracker</h1>
+                <div class="heading1">Your Balance</div>
+                <div id="value-Balance">24500</div>
+                <div id="income-expenses">
+                    <div id="value-income" class="heading1">
+                        <div>Income</div>
+                        <div id="value-in">30000</div>
+                    </div>
+                    <div id="value-expenses" class="heading1">
+                        <div>Expenses</div>
+                        <div id="value-ex">5500</div>
+                    </div>
+                </div>
+            </div>
+            <div id="add-transaction">
+                <h2>Add Transaction</h2>
+                <form id="formId">
+                    <label>Description:-</label><br /><br />
+                    <input type="text" id="desc" placeholder="Enter description" required /><br />
+                    <label>Amount(negative-expense , positive-income):-</label><br /><br />
+                    <input type="number" id="amt" placeholder=" Enter amount(+500 0r -300)" required />
+                </form>
+                <button onClick="bnt_transation()" id="bnt">Add Transation</button>
+
+            </div>
+        </div>
+        <div class="inner-dashboard-div2">
+            <div id="chart1">
+                <canvas id="balanceChart"></canvas>
+            </div>
+            <div id="chart2">
+                <canvas id="expenseChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div id="search_div">
+            <input type="text" id="search" placeholder="Search here with description" />
+        </div>
+        <div id="table-div">
+            <div id="table-heading">Transation History</div>
+            <table border="1">
+                <tr>
+                    <th>SNO</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Action</th>
+
+                </tr>
+                <tbody id="tab">
+                    
+                <tr>
+                    <td>1</td>
+                    <td>1/4/2026</td>
+                    <td>Salary</td>
+                    <td>30000</td>
+                    <td>Income</td>
+                    <td><button onclick="editRow(this)">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2/4/2026</td>
+                    <td>Food</td>
+                    <td>1500</td>
+                    <td>Expense</td>
+                     <td><button onclick="editRow(this)">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2/4/2026</td>
+                    <td>Travel</td>
+                    <td>1000</td>
+                    <td>Expense</td>
+                    <td><button onclick="editRow(this)">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5/4/2026</td>
+                    <td>shopping</td>
+                    <td>3000</td>
+                    <td>Expense</td>
+                     <td><button onclick="editRow(this)">Edit</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="in-heading">Insights</div><br><br>
+        <div id="insights">
+             <div id="chart3"><canvas id="monthlyChart"></canvas></div>
+             <div id="div-insight">
+                <div id="head-In"><h3 id="highest-spend"></h3></div>
+             <div id="p-in"><p id="other-observation"></p></div>
+             </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
