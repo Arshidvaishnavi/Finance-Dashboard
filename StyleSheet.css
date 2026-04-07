@@ -9,29 +9,17 @@ a{
     width: 100%;
     min-height: 100vh;
     overflow:hidden;
-/*        background-color:antiquewhite;*/
 }
 .inner-dashboard-div1 {
-/*        background-color:red;*/
-    height: 50vh;
-    width: 70%;
-    margin-right: auto;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    position: sticky;
-    left: 260px;
 }
 .inner-dashboard-div2 {
-/*        background-color: red;*/
-    height: 47vh;
-    width: 70%;
-    margin-right: auto;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    position: sticky;
-    left: 260px;
+    padding-left: 280px;
 }
 .sidebar {
     width: 260px;
@@ -54,7 +42,6 @@ a{
     color: white;
 }
 .sidebar_items {
-    /*    background-color:azure;*/
     width: 200px;
     height: 400px;
     font-size: 30px;
@@ -66,7 +53,6 @@ a{
 }
 
 #main-area1 {
-/*    background-color: yellow;*/
     width: 600px;
     margin-left: auto;
     height: 400px;
@@ -110,7 +96,6 @@ h1 {
 }
 
 #add-transaction {
-/*    background-color: pink;*/
     width: 600px;
     height: 400px;
     display:flex;
@@ -156,7 +141,6 @@ label{
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-/*    background-color: antiquewhite;*/
 }
 #search_div {
     width: 500px;
@@ -179,8 +163,6 @@ label{
     width:100%;
     height:60vh;
     padding: 40px 0 0 350px;
-   /* background-color:aqua; */
-/*    overflow:auto;*/
 }
 table{
     width:70%;
@@ -206,14 +188,12 @@ tr{
     font-size: 40px;
     height: 30px;
     padding-left: 750px;
+     color: #483d8b;
 }
 #insights{
-    /* background-color: rgb(196, 181, 196); */
-     width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: row;
-    padding: 10px 0 0 80px;
+    padding: 0px 0 0 80px;
 }
 #div-insight{
     width: 700px;
@@ -243,17 +223,9 @@ tr{
     padding-left: 60px;
 }
 @media (max-width: 600px) {
-    .container {
-        overflow: unset;
-    }
-
     .inner-dashboard-div1 {
-        height: 100vh;
-        width: 10%;
         flex-direction: column;
-        /*        padding-right: 50px;*/
-        position: sticky;
-        left: 10px;
+        left: 0px;
     }
 
     .sidebar {
@@ -308,8 +280,7 @@ tr{
         width: 10%;
         flex-direction: column;
         gap: 0px;
-        position: sticky;
-        left: 10px;
+         padding-left: 0px;
     }
 
     #chart1 {
@@ -321,18 +292,11 @@ tr{
         width: 300px;
         padding: 0 0 0 40px;
     }
-    .container1 {
-        width:90%;
-        display:flex;
-        justify-content:right;
-        flex-direction:column;
-    }
-
+   
     #search_div {
         padding-left:120px;
         padding-top:40px;
         width:300px;
-/*        background-color:palevioletred;*/
     }
 
     #search {
@@ -344,31 +308,22 @@ tr{
 
     #table-div {
         width:100%;
-        padding: 30px 0 0 25px;
-        background-color: aliceblue;
+        padding: 30px 0 0 0px;
     }
 
-    table {
-        width: 200px;
-        height: 200px;
-        border-collapse: collapse;
-    }
     th{
-        font-size:15px;
+        font-size:12px;
     }
     #in-heading{
     font-size: 30px;
     height: 30px;
-    padding-left: 50px;
+    padding: 0px;
 }
 #insights{
-    background-color: rgb(196, 181, 196);
-     width: 100%;
-    height: 600px;
-    display: flex;
+    height: 70vh;
     flex-direction: column;
     padding: 0;
-    gap:2px;
+    gap:0px;
 }
 #div-insight{
     width: 200px;
@@ -379,19 +334,18 @@ tr{
 #head-In{
     width:500px;
     height: 150;
-    padding: 0 0 0 350px;
+    padding: 0 0 0 320px;
 }
 #chart3{
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 500px;
     display: flex;
     padding: 10px 0 0 0px;
 }
 #p-in{
     font-size: 20px;
     width: 500px;
-    height: 150px;
     font-weight: bold;
-    padding: 10px 0 0 350px;
+    padding: 0px 0 0 320px;
 }
 }
