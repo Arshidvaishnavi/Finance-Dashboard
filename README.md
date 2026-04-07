@@ -1,11 +1,11 @@
-#Financial Tracking Website
+# Financial Tracking Website
 
-##About the Project:-
+## About the Project:-
 This project is a financial tracking website where we can see total balance, income, and expenses in one place. It helps to understand how money is being used and managed.
 
 **[Live Demo] (https://arshidvaishnavi.github.io/Finance-Dashboard/)**
 
-##Features:-
+## Features:-
 - Shows total balance, total income, and total expenses
 - Pie chart displays category-wise income and spending (salary, food, travel, etc.)
 - Line chart shows how balance changes after each transaction
@@ -14,24 +14,24 @@ This project is a financial tracking website where we can see total balance, inc
 - Admin can edit and update transactions
 - All values update automatically after changes
 
-##Roles:-
+## Roles:-
 - Admin: Can add and edit transactions
 - User: Can only view the data
 
-##Technologies Used:-
+## Technologies Used:-
 - HTML
 - CSS
 - JavaScript
 - Chart.js
 
-##What I Learned:-
+## What I Learned:-
 - How to build a financial tracking system
 - How to use charts for data visualization
 - Handling dynamic updates using JavaScript
 - Improving responsive design for different screen sizes
 
-##How to Run:-
+## How to Run:-
 Clone the repository and open index.html in your browser.
 
-##About Me:-
+## About Me:-
 I am a recent B.Tech CSE graduate interested in frontend development and actively looking for job opportunities.
